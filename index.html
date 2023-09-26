@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cyberscholar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #666;
+    }
+
+    .active {
+      background-color: #666;
+    }
+
+    /* Reset some default styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style the card container */
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      /* Adjust the maximum width as needed */
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Style each card */
+    .card {
+      flex: 1;
+      max-width: calc(33.3333% - 20px);
+      /* 33.3333% width for each card with some spacing */
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease;
+    }
+
+
+    /* Style the card content */
+    .card-content {
+      padding: 20px;
+    }
+
+    /* Style the card title */
+    .card-content h2 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    /* Style the card text */
+    .card-content p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    /* Style the card link */
+    .card-content a {
+      text-decoration: none;
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .card-content a:hover {
+      background-color: #0056b3;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .card {
+        max-width: calc(50% - 20px);
+        /* Two cards per row on smaller screens */
+      }
+    }
+
+    /* Add a hover effect */
+    .card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <ul style="padding: 10px 0% 10px 0%;">
+    <li><img src="ee.png" style="height: 45px; width: 50px;"></li>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#Student">Student</a></li>
+    <li><a href="#Faclity">Faclity</a></li>
+    <li><a href="#Adminsration">Adminsration</a></li>
+    <li><a href="#Contact">Contact us</a></li>
+  </ul>
+  <section id="active">
+    <div style="display: flex; justify-content: space-between;align-items: center; margin-top: 5%; ">
+      <div><img style="max-width: 100%;min-height: 500px; object-fit: contain; border-radius: 50%;" src="orr.jpg">
+      </div>
+      <div>
+        <h1> Be The Change </h1>
+      </div>
+    </div>
+  </section>
+  <section id="Student">
+    <div style="display: flex;justify-content: center;">
+      <h1>STUDENT</h1>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <h2>STUDENT ID</h2>
+          <p><input></p>
+          <P>CLICK TO GET INFO</P>
+          <a href="del.html">GET</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h2>ADD STUDENT</h2>
+          <p>CLICK BELOW TO ADD</p>
+          <a href="add.html">ADD</a>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <div class="card-content">
+          <h2>DELETE STUDENT</h2>
+          <p>CLICK BELOW TO DELETE</p>
+          <a href="stud.html">DELETE</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="Faclity">
+    <div style="display: flex;justify-content: center;">
+      <h1>FACULITY</h1>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <h2>FACULITY INFO</h2>
+          <p>
+            <INPU></INPU>
+          </p>
+          <P>CLICK TO GET INFO</P>
+          <a href="fadel.html">GET</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h2>ADD FACULITY DETAILS</h2>
+          <p>CLICK BELOW TO ADD</p>
+          <a href="fad.html">ADD</a>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <div class="card-content">
+          <h2>DELETE FACULITY INFO</h2>
+          <p>CLICK BELOW TO DELETE</p>
+          <a href="fadinfo.html">DELETE</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+  <section id="Adminsration">
+
+    <div style="display: flex;justify-content: center;">
+      <h1>ADMINSTRATION</h1>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <h2>TRANSPORTATION</h2>
+          <p>GET TRANSPORTATION DETAILS</p>
+          <a href="tran.html">GET</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h2>FEE DETAILS</h2>
+          <p>GET THE FEE DETAILS OF ALL</p>
+          <a href="stufe.html">GET</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h2>SALARY DETAILS</h2>
+          <p>GET THE SALARY DETAILS OF ALL</p>
+          <a href="salde.html">GET</a>
+        </div>
+      </div>
+
+
+  </section>
+  <section id="Contact">
+
+  </section>
+  <section id="contactus">
+    <footer class="company-footer">
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-envelope"></i> Email : <a style="text-decoration: none; color: white;"
+            href="mailto:naveenkotla3232@gmail.com">cyberscholar@gmail.com</a></p>
+        <p><i class="fa-solid fa-phone"></i> Phone : <a style="text-decoration: none; color: white;"
+            href="tel:+916301686530"> 955555555</a></p>
+        <address><i class="fa-solid fa-location-dot"></i>123 Main Street<br>Hyderabad, India</address>
+      </div>
+
+      <div class="footer-section about">
+        <h3>About Us</h3>
+        <p>Founded in 2023, cyberscholar is headquartered in Hyderabad and is about to start its operations.</p>
+      </div>
+
+      <div class="footer-section follow">
+        <h3>Follow Us</h3>
+        <ol class="social-links" style="display: flex; justify-content: center;">
+          <li><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+        </ol>
+      </div>
+    </footer>
+
+  </section>
+
+
+</body>
+
+</html>

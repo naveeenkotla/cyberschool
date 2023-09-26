@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Delete Student</title>
+    <style>
+    *{
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+    <h1>Delete Student</h1>
+    
+    <form id="deleteStudentForm">
+        <label for="studentList">Select Student to Delete:</label>
+        <select id="studentList" name="studentId">
+            <option value="1">Student 1</option>
+            <option value="2">Student 2</option>
+            <option value="3">Student 3</option>
+            <!-- Add more options for other students -->
+        </select>
+        <button type="submit">Delete Student</button>
+    </form>
+
+    <div id="confirmationMessage"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

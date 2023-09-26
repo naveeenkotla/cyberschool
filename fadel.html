@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>View Faculty Info</title>
+    <style>
+    *{
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>View Student Info</h1>
+
+  <form id="viewStudentForm">
+    <label for="studentId">Select faculity name:</label>
+    <select id="studentId" name="studentId">
+      <option value="1">english  </option>
+      <option value="2">maths</option>
+      <option value="3">science</option>
+      <!-- Add more options for other students -->
+    </select>
+    <a 
+      style="text-decoration: none; background-color: blue; border: black; padding: 10px ; border-radius: 10px;">GET</a>
+  </form>
+
+  <div id="studentInfo"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
